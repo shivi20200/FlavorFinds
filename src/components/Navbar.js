@@ -15,7 +15,7 @@ export default function Navbar(props) {
     let navigate = useNavigate();
     let data=useCart();
     const handleLogout = () => {
-        localStorage.removeItem('token')
+        localStorage.removeItem('authToken')
 
         navigate("/login")
     }
